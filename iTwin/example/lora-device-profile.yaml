@@ -60,3 +60,6 @@ RFRegion: ""
 # Whether the end device supports 32-bit frame counters
 supports32bitFCnt: true
 
+# Custom Tag for iTwin integration
+# You MUST supply ITWIN_DEVICE_SDE and ITWIN_SENSOR_SDE values for all sensors. See example below
+"tags": "{\"ITWIN_DEVICE_SDE\": \"DEMO_DEVICE_SDE\",\"ITWIN_SENSOR_SDE\":\"[ { \"integrationId\": \"DEMO_SENSOR_SDE\", \"name\": \"Distance sensor\", \"units\": [\"m\", \"pct\"], \"metrics\": [\"distance\", \"battery_percentage\"] } ]}"
