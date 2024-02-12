@@ -1,4 +1,14 @@
-/* https://www.decentlab.com/products/eleven-parameter-weather-station-for-lorawan */
+/**
+ *  https://www.decentlab.com/products/eleven-parameter-weather-station-for-lorawan
+ *  https://github.com/decentlab/decentlab-decoders/blob/master/DL-ATM41/DL-ATM41.js
+ *
+ *  Modified by Krucial for Connect iTwin plugin
+ *  */
+
+/**
+ * LoRaWAN decoder helper functions
+ * @type {{PROTOCOL_VERSION: number, read_int: (function(*, *): *), SENSORS: [{values: [{unit: string, displayName: string, convertVal: (function(*): *), name: string},{unit: string, displayName: string, convertVal: (function(*): *), name: string},{displayName: string, convertVal: (function(*): *), name: string},{unit: string, displayName: string, convertVal: (function(*): *), name: string},{unit: string, displayName: string, convertVal: (function(*): *), name: string},null,null,null,null,null,null,null,null,null,null,null,null], length: number},{values: [{unit: string, displayName: string, convertVal: (function(*): *), name: string}], length: number}], decode: ((function(*, *): ({data: {}, warnings: [], errors: [string]}))|*)}}
+ */
 let weatherstation_decoder = {
     PROTOCOL_VERSION: 2,
     SENSORS: [
@@ -77,10 +87,22 @@ let weatherstation_decoder = {
                 unit: 'V'}]}
     ],
 
+    /**
+     * Convert hex characters to bytes
+     * @param bytes
+     * @param pos
+     * @returns {*}
+     */
     read_int: function (bytes, pos) {
         return (bytes[pos] << 8) + bytes[pos + 1];
     },
 
+    /**
+     * Decode received LoRaWAN packets from weather station
+     * @param bytes
+     * @param recvTime
+     * @returns {{data: {}, warnings: *[], errors: string[]}|{data: {protocol_version: *, device_id: *}, warnings: *[], errors: *[]}}
+     */
     decode: function (bytes, recvTime) {
         let version = bytes[0];
 
@@ -131,6 +153,11 @@ let weatherstation_decoder = {
     }
 };
 
+/**
+ * LoRaWAN decoder for DL-ATM41 weather station
+ * @param input
+ * @returns {{data: {}, warnings: [], errors: string[]}}
+ */
 function decodeUplink(input) {
     return weatherstation_decoder.decode(input.bytes, input.recvTime)
 }
