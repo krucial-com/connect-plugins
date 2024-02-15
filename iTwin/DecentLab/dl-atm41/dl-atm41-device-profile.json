@@ -1,29 +1,14 @@
 {
-  "name": "iTwin Weather Station",
-  "classBTimeout": 300,
-  "classCTimeout": 300,
-  "factoryPresetFreqs": [255,255,255,255,255,255],
-  "geolocBufferTTL": 0,
-  "geolocMinBufferSize": 0,
-  "macVersion": "1.0.3",
-  "maxDutyCycle": 1,
-  "maxEIRP": 0,
-  "networkServerId": null,
-  "payloadCodec": null,
-  "pingSlotDR": 0,
-  "pingSlotFreq": 0,
-  "pingSlotPeriod": 0,
-  "regParamsRevision": 2,
-  "rxDROffset1": 0,
-  "rxDataRate2": 0,
-  "rxDelay1": 0,
-  "rxFreq2": 0,
-  "supports32BitFCnt": true,
   "supportsClassB": false,
   "supportsClassC": false,
+  "macVersion": "1.0.3",
+  "regParamsRevision": "rp001-1.0.3-RevA",
   "supportsJoin": true,
+  "maxEIRP": 0,
+  "maxDutyCycle": 1,
+  "supports32BitFCnt": true,
   "tags": {
     "ITWIN_DEVICE_SDE": "DEMO_DEVICE_SDE",
-    "ITWIN_SENSOR_SDE": "[     {         \"integrationId\": \"TEMPERATURE_SDE\",         \"name\": \"temp\",         \"units\": [\"C\"],         \"metrics\": [\"T\"]     },     {         \"integrationId\": \"PRECIPITATION_SDE\",         \"name\": \"rain\",         \"units\": [\"m\"],         \"metrics\": [\"precip\"]     },     {         \"integrationId\": \"WIND_DIRECTION_SDE\",         \"name\": \"wind direction\",         \"units\": [\"deg\"],         \"metrics\": [\"az_wind\"]     },     {         \"integrationId\": \"WIND_SPEED_SDE\",         \"name\": \"wind speed\",         \"units\": [\"mps\"],         \"metrics\": [\"v_wind\"]     },     {         \"integrationId\": \"SOLAR_RADIATION_SDE\",         \"name\": \"sunlight\",         \"units\": [\"w_m2\"],         \"metrics\": [\"irradiance\"]     } ]"
+    "ITWIN_SENSOR_SDE": "[ { \"integrationId\": \"TEMPERATURE_SDE\", \"name\": \"temp\", \"units\": [\"C\"], \"metrics\": [\"T\"]  }, { \"integrationId\": \"PRECIPITATION_SDE\", \"name\": \"rain\", \"units\": [\"m\"], \"metrics\": [\"precip\"] }, { \"integrationId\": \"WIND_DIRECTION_SDE\", \"name\": \"wind direction\", \"units\": [\"deg\"], \"metrics\": [\"az_wind\"] }, {\"integrationId\": \"WIND_SPEED_SDE\", \"name\": \"wind speed\", \"units\": [\"mps\"], \"metrics\": [\"v_wind\"] }, { \"integrationId\": \"SOLAR_RADIATION_SDE\", \"name\": \"sunlight\", \"units\": [\"w_m2\"], \"metrics\": [\"irradiance\"] } ]"
   }
 }

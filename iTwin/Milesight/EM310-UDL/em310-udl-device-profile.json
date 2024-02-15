@@ -1,29 +1,14 @@
 {
-  "name": "iTwin Bin Sensor",
-  "classBTimeout": 300,
-  "classCTimeout": 300,
-  "factoryPresetFreqs": [255,255,255,255,255,255],
-  "geolocBufferTTL": 0,
-  "geolocMinBufferSize": 0,
-  "macVersion": "1.0.3",
-  "maxDutyCycle": 1,
-  "maxEIRP": 0,
-  "networkServerId": null,
-  "payloadCodec": null,
-  "pingSlotDR": 0,
-  "pingSlotFreq": 0,
-  "pingSlotPeriod": 0,
-  "regParamsRevision": 2,
-  "rxDROffset1": 0,
-  "rxDataRate2": 0,
-  "rxDelay1": 0,
-  "rxFreq2": 0,
-  "supports32BitFCnt": true,
   "supportsClassB": false,
   "supportsClassC": false,
+  "macVersion": "1.0.3",
+  "regParamsRevision": "rp001-1.0.3-RevA",
   "supportsJoin": true,
+  "maxEIRP": 0,
+  "maxDutyCycle": 1,
+  "supports32BitFCnt": true,
   "tags": {
     "ITWIN_DEVICE_SDE": "DEMO_DEVICE_SDE",
-    "ITWIN_SENSOR_SDE": "[     {         \"integrationId\": \"MILESIGHT_BIN_SDE\",         \"name\": \"bin sensor\",         \"units\": [\"m\", \"pct\"],         \"metrics\": [\"distance\", \"battery_percentage\"]     } ]"
+    "ITWIN_SENSOR_SDE": "[ { \"integrationId\": \"MILESIGHT_BIN_SDE\", \"name\": \"bin sensor\", \"units\": [\"m\", \"pct\"], \"metrics\": [\"distance\", \"battery_percentage\"] } ]"
   }
 }

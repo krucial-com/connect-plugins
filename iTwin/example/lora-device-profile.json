@@ -1,33 +1,14 @@
 {
-  "name": "Krucial connect iTwin example",
-  "classBTimeout": 1,
-  "classCTimeout": 1,
-  "factoryPresetFreqs": [
-    255,
-    255,
-    255,
-    255,
-    255,
-    255
-  ],
-  "geolocBufferTTL": 1,
-  "geolocMinBufferSize": 1,
-  "macVersion": "1.0.3",
-  "maxDutyCycle": 1,
-  "maxEIRP": 0,
-  "networkServerId": null,
-  "payloadCodec": null,
-  "pingSlotDR": 0,
-  "pingSlotFreq": 0,
-  "pingSlotPeriod": 0,
-  "regParamsRevision": 2,
-  "rxDROffset1": 0,
-  "rxDataRate2": 0,
-  "rxDelay1": 0,
-  "rxFreq2": 0,
-  "supports32BitFCnt": true,
   "supportsClassB": false,
   "supportsClassC": false,
+  "macVersion": "1.0.3",
+  "regParamsRevision": "rp001-1.0.3-RevA",
   "supportsJoin": true,
-  "tags": "{\"ITWIN_DEVICE_SDE\": \"DEMO_DEVICE_SDE\",\"ITWIN_SENSOR_SDE\":\"[ { \"integrationId\": \"DEMO_SENSOR_SDE\", \"name\": \"Distance sensor\", \"units\": [\"m\", \"pct\"], \"metrics\": [\"distance\", \"battery_percentage\"] } ]}"
+  "maxEIRP": 0,
+  "maxDutyCycle": 1,
+  "supports32BitFCnt": true,
+  "tags": {
+    "ITWIN_DEVICE_SDE": "DEMO_DEVICE_SDE",
+    "ITWIN_SENSOR_SDE": "[ { \"integrationId\": \"DEMO_SENSOR_SDE\", \"name\": \"Distance sensor\", \"units\": [\"m\", \"pct\"], \"metrics\": [\"distance\", \"battery_percentage\"] } ]"
+  }
 }
