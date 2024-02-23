@@ -51,9 +51,7 @@ supportsJoin: true
 
 # Maximum EIRP: number in dBm
 maxEIRP: 12
-# Valid string values include “EU868”, “US902”, “Australia915”, “AS923”
-# Note this will be overwritten to match the hardware installed on your K-Cell
-RFRegion: ""
+
 # Whether the end device supports 32-bit frame counters
 supports32bitFCnt: true
 
