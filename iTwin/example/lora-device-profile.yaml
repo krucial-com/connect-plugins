@@ -1,8 +1,5 @@
 # Device profiles are defined in the LoRaWAN Backend Interfaces specification
 #  https://lora-alliance.org/wp-content/uploads/2020/11/TS002-1.1.0_LoRaWAN_Backend_Interfaces.pdf
-name: "Krucial connect iTwin example"
-# String maximum 64 characters - Could be specified by Krucial....
-DeviceProfileID: "Krucial connect iTwin example"
 
 # Whether the end device supports class B
 supportsClassB: false
