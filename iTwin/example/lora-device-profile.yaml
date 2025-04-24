@@ -32,7 +32,7 @@ macVersion: '1.0.3'
 #   1.0.3: RP001-1.0.3-RevA
 #   1.0.4: RP002-1.0.0, RP002-1.0.1, RP002-1.0.2, RP002-1.0.3 or RP002-1.0.4
 #   1.1:   RP001-1.1-RevA or RP001-1.1-RevB
-regParamsRevision: 'RP001-1.0.3-RevA'
+regionalParameterVersion: 'RP001-1.0.3-RevA'
 
 # End device supports join (OTAA) or not (ABP)
 supportsJoin: true
